@@ -52,7 +52,7 @@ export default class ClassesController {
       cost,
       schedule
     } = request.body
-  
+
     const trx = await db.transaction();
   
     try {
