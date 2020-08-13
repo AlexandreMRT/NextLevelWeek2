@@ -29,8 +29,52 @@ function TeacherForm() {
         <fieldset>
           <legend>Sobre a aula</legend>
 
-          <Select name="subject" label="Matéria" />
+          <Select
+            name="subject"
+            label="Matéria"
+            options={[
+              {value: 'Artes', label: 'Artes'},
+              {value: 'Biologia', label: 'Biologia'},
+              {value: 'Ciências', label: 'Ciências'},
+              {value: 'Educação Física', label: 'Educação Física'},
+              {value: 'Fisica', label: 'Fisica'},
+              {value: 'Geografia', label: 'Geografia'},
+              {value: 'História', label: 'História'},
+              {value: 'Matemãtica', label: 'Matemãtica'},
+              {value: 'Português', label: 'Português'},
+              {value: 'Química', label: 'Química'},
+            ]}
+          />
           <Input name="cost" label="Custo da sua hora por aula" />
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            Horários disponíveis
+
+            <button type="button">
+              + Novo horário
+            </button>
+          </legend>
+
+          <div className="schedule-item">
+          <Select
+            name="subject"
+            label="Matéria"
+            options={[
+              {value: 'Artes', label: 'Artes'},
+              {value: 'Biologia', label: 'Biologia'},
+              {value: 'Ciências', label: 'Ciências'},
+              {value: 'Educação Física', label: 'Educação Física'},
+              {value: 'Fisica', label: 'Fisica'},
+              {value: 'Geografia', label: 'Geografia'},
+              {value: 'História', label: 'História'},
+              {value: 'Matemãtica', label: 'Matemãtica'},
+              {value: 'Português', label: 'Português'},
+              {value: 'Química', label: 'Química'},
+            ]}
+          />
+          </div>
         </fieldset>
 
         <footer>
